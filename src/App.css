@@ -12,8 +12,8 @@
 .navbar {
 	display: flex;
 
-    background-color: var(--bg-accent-color);
-    padding: var(--spacing-2xl);
+	background-color: var(--bg-accent-color);
+	padding: var(--spacing-2xl);
 }
 
 .navbar-container {
@@ -23,18 +23,48 @@
 }
 
 .nav-item {
-    color: var(--nav-item-text-color);
-    border-radius: var(--border-radius-card);
-    padding: var(--spacing-lg);
+	color: var(--nav-item-text-color);
+	border-radius: var(--border-radius-card);
+	padding: var(--spacing-lg);
+	background-color: var(--nav-item-bg-color);
 }
 
 .nav-item:hover {
-    background-color: var(--nav-item-text-bg);
-    color: var(--nav-item-text-color-hover);
+	background-color: var(--nav-item-bg-color-hover);
+	color: var(--nav-item-text-color-hover);
 }
 
 .nav-item.active {
-    background-color: var(--nav-item-bg-active);
+	background-color: var(--nav-item-bg-color-active);
+}
+
+.profile-navbar {
+	display: flex;
+}
+
+.profile-navbar-container {
+	display: flex;
+	justify-content: center;
+	flex: 1;
+	gap: 2rem;
+
+	padding: var(--spacing-lg) var(--spacing-2xl);
+}
+
+.profile-navbar-container > a {
+	color: var(--nav-item-text-color);
+	border-radius: var(--border-radius-card);
+	padding: var(--spacing-md);
+	background-color: var(--nav-item-bg-color);
+}
+
+.profile-navbar-container > a:hover {
+	background-color: var(--nav-item-bg-color-hover);
+	color: var(--nav-item-text-color-hover);
+}
+
+.profile-navbar-container > a.active {
+	background-color: var(--nav-item-bg-color-active);
 }
 
 .main {
@@ -42,14 +72,21 @@
 	flex-direction: column;
 	flex: 1;
 
-    background-color: var(--bg-color);
+	background-color: var(--bg-color);
 	padding: var(--spacing-2xl) 0;
 }
 
 .footer {
-    display: flex;
+	display: flex;
 
-    background-color: var(--bg-accent-color);
-    padding: var(--spacing-2xl);
+	background-color: var(--bg-accent-color);
+	padding: var(--spacing-2xl);
+	color: white;
 }
 
+.footer > button {
+	color: var(--nav-item-text-color);
+	border-radius: var(--border-radius-card);
+	padding: var(--spacing-lg);
+	background-color: var(--nav-item-bg-color);
+}

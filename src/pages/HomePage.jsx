@@ -1,5 +1,12 @@
+import { useContext } from "react";
+import { LanguageContext } from "../contexts/LanguageContext";
+
 export const HomePage = () => {
-    return <>
-        <h1>HOME PAGE</h1>
-    </>
-}
+	const { lang, TEXTS } = useContext(LanguageContext);
+
+	return (
+		<>
+			<h1>{TEXTS[lang].titleHomePage}</h1>
+		</>
+	);
+};

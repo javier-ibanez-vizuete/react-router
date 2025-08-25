@@ -10,8 +10,30 @@ export const LanguageProvider = ({ children }) => {
 	};
 
 	const TEXTS = {
-		en: {},
-		es: {},
+		en: {
+			navHomePage: "Home",
+			navAboutPage: "About",
+			navUserPage: "Profile",
+			navUserSettings: "Settings",
+			navUserDetails: "Details",
+			titleHomePage: "Home Page",
+			titleAboutPage: "About Me",
+			titleUserPage: "Profile",
+			titleSettingsUserPage: "Settings",
+			titleDetailsUserPage: "Details",
+		},
+		es: {
+			navHomePage: "Inicio",
+			navAboutPage: "Sobre mi",
+			navUserPage: "Perfil",
+			navUserSettings: "Configuración",
+			navUserDetails: "Detalles",
+			titleHomePage: "Pagina Principal",
+			titleAboutPage: "Sobre mi",
+			titleUserPage: "Perfil",
+			titleSettingsUserPage: "Configuración",
+			titleDetailsUserPage: "Detalles",
+		},
 	};
 
 	return <LanguageContext value={{ lang, TEXTS, onToggleLang }}>{children}</LanguageContext>;
