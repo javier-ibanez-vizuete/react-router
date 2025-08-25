@@ -4,8 +4,12 @@ export const NavBar = () => {
 	return (
 		<nav className="navbar">
 			<div className="navbar-container">
-				<NavLink to="/">Home Page</NavLink>
-				<NavLink to="/about">About Page</NavLink>
+				<NavLink className="nav-item" to="/">
+					Home Page
+				</NavLink>
+				<NavLink className="nav-item" to="/about">
+					About Page
+				</NavLink>
 			</div>
 		</nav>
 	);
